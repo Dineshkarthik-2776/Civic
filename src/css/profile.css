@@ -1,0 +1,23 @@
+.profile-container {
+  padding: 25px;
+}
+
+.profile-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.profile-row {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+.profile-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.profile-value {
+  color: #1f2937;
+}

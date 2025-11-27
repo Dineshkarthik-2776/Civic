@@ -1,0 +1,167 @@
+/* HEADER */
+.hd-header {
+  width: 100%;
+  height: 72px;
+  background: #0B2447;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  animation: headerFade .3s ease-out;
+}
+
+@keyframes headerFade {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* LOGO */
+.hd-logo {
+  font-size: 24px;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: opacity .2s, transform .2s;
+}
+
+.hd-logo:hover {
+  opacity: .8;
+  transform: translateY(-1px);
+}
+
+/* CENTER INFO */
+.hd-center {
+  flex: 1;
+  text-align: center;
+}
+.hd-center-dept {
+  font-size: 17px;
+  font-weight: 700;
+}
+.hd-center-district {
+  font-size: 13px;
+  opacity: .8;
+}
+
+/* RIGHT SECTION */
+.hd-right {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+/* BELL */
+.hd-notification {
+  position: relative;
+  cursor: pointer;
+  transition: transform .2s;
+}
+.hd-notification:hover {
+  transform: translateY(-1px);
+}
+
+.hd-bell {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  opacity: .9;
+}
+
+.hd-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #e53935;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 50%;
+}
+
+/* USER BUTTON */
+.hd-user-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.hd-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.4);
+}
+
+.hd-username {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* CHEVRON ICON */
+.hd-chevron {
+  transition: transform .25s ease;
+  opacity: .85;
+}
+.hd-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* DROPDOWN */
+.hd-dropdown {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 190px;
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+  overflow: hidden;
+  animation: dropdownIn .2s ease-out;
+}
+@keyframes dropdownIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* DROPDOWN HEADER */
+.hd-dropdown-header {
+  background: #EEF2FF;
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.hd-drop-name {
+  font-weight: 700;
+}
+.hd-drop-email {
+  font-size: 12px;
+  color: #475569;
+}
+
+/* ITEMS */
+.hd-dropdown-item {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.hd-dropdown-item:hover {
+  background: #F1F5F9;
+}
+.hd-logout {
+  color: #d32f2f;
+}
+.hd-logout:hover {
+  background: #FED7D7;
+}
